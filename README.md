@@ -1,2 +1,2 @@
 # EastWest Bank Intranet 
-# HTML Design to ASP
+# HTML Development to Classic ASP
