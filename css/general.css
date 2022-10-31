@@ -1,0 +1,888 @@
+/*
+
+Intranet - EastWest Banking Corporation, 2011
+Web Designer: Gerald Calderon
+
+Colors: 
+
+#ae1c7a
+#533191
+#d5e14d
+
+*/
+
+
+/* ------------------------------------- */
+/* --------------- GLOBAL -------------- */
+/* ------------------------------------- */
+
+#header {
+	width: 950px;
+	margin: 5px auto 0px auto;
+	padding: 0px;
+	/*border: 1px dashed #999;*/
+}
+
+#wrapper {
+	width: 950px;
+	margin: 0 auto;
+	padding: 0px;
+	/*border: 1px solid #999;*/
+}
+
+	#container {
+		width: 750px;
+		margin: 0px auto;
+		padding: 0px;
+		float: left;
+		/*border: 1px dashed yellow;*/
+	}
+	
+
+	
+	#leftsidebar{
+		float:left;
+		width: 150px;
+		height: 450px;
+		margin-top:15px;
+		padding: 5px;
+		/*border: 1px dashed blue;*/
+	
+	}
+
+	#content{
+		float:right;
+		width: 560px;
+		height:auto;
+		margin: 25px 0px 20px 0px;
+		padding: 10px;
+		/*border: 1px dashed red;*/
+		
+	
+	}
+		#content p {
+			padding: 10px 0px 10px 0px;
+			line-height: 17px;
+		}
+
+	#rightsidebar {
+		width: 160px;
+		padding: 0px 10px 0px 10px;
+		float: right;
+		/*border: 1px dashed #666;*/
+	}
+
+
+#footer {
+	clear: left;
+	width: 960px;
+	margin: 30px auto;
+	margin-bottom: 15px;
+	/*border: 1px dashed #666;*/
+}
+
+
+/* ------------------------------------- */
+/* --------------- EXTRAS -------------- */
+/* ------------------------------------- */
+
+body{
+	font-family:tahoma,arial,sans-serif;font-size:11px;
+		line-height: 17px;
+}
+
+.clear {
+	clear: both
+}
+
+p {
+	font-weight: normal;
+}
+
+p a.link, p a:visited {
+	color:#542785;cursor:pointer;
+}
+p a:hover {
+	color:#b2006f;cursor:pointer;
+}
+
+
+
+h3 { 
+	color:#542785;
+
+}
+
+#dirsearch {
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.dirsearch { 
+	background-image: url(../images/dirsearch.jpg);
+	background-repeat: no-repeat;
+
+	width: 207px;
+	height: 35px;
+	margin-bottom: 8px;
+}
+
+.dirsearch_input {
+	margin: 8px 0px 5px 0px;
+	margin-left: 10px;
+	background-color: #f5f7f6;
+	border:1px solid #f5f7f6;
+	width:200px;
+	height:17px;
+	text-align: center;
+	color:#816B57;
+	font-size: 11px;
+}
+
+.dirsearch_go {	
+	cursor:pointer;
+	border:outset 0px #ccc;
+	background:#999;
+	width:21px;
+	height:35px;
+	padding: 1px 2px;
+	background:url(../images/dirsearch2.jpg) repeat-x left top;
+}
+
+/* Tables*/
+
+.tabl tr.main td, .tabl tr.main th{
+	background-color: #ceadef;
+	border: 1px solid #000;
+}
+
+.tabl tr.codd td { 
+	background-color:	#efe9f5;
+}
+.tabl tr.ceven td { 
+	background-color:	#f9f9f9;}	
+
+table.sample
+{
+border-collapse:collapse;
+height: 25px;
+}
+table.sample, table.sample td , table.sample th
+{
+border:2px solid #FFF;
+}
+table.sample th {
+background-color:#d7e053;
+width:15%; font-weight:bold; 
+text-align:center; 
+border: 2px solid #FFF;
+height:30px;
+}
+
+
+/*applications*/
+.reportOptions {
+	margin:10px 0;
+	padding:0;
+}
+.reportOptions li {
+	list-style:none;
+	padding:0;
+	margin:0;
+	line-height:230%;
+	font-weight: bold;
+	padding-left:
+}
+.reportOptions a {
+	padding:2px 1px 6px 28px;
+	display:block;
+	width:400px;
+	background:url(/..images/arrow1.gif) no-repeat 13px 50%;
+	background-image: url(../images/arrow1.gif);
+	background-repeat: no-repeat;
+
+	border-bottom:1px solid #d9d9d7;
+	color:#542785;
+}
+.reportOptions a:hover {
+	background:url(/..images/arrow1.gif) no-repeat 13px 50% #f0f1f3;
+	background-image: url(../images/arrow1.gif);
+	background-repeat: no-repeat;
+
+
+}
+.reports {
+	padding:12px 12px;
+	width:75%;
+	font-size:11px;
+	margin-bottom:12px;}
+	
+
+.reports a{
+	color: #4f2683;	
+}
+
+.reports a:hover {
+	color: #b2006f;	
+}
+
+.alltable {
+	padding:12px 12px;
+	width:90%;
+	font-size:11px;
+	margin-bottom:12px;
+	background-color:#f9f9f9;
+	border:solid 1px #d0d0d0;}
+	
+.tablegreen {
+	padding:12px 12px;
+	font-size:11px;
+	height: 25px;
+	margin-bottom:12px;
+	background-color:#d7e053;
+	border:solid 1px #FFF;}
+
+.input_textbox{
+	border: 1px solid #999;
+	font-family:tahoma,arial,sans-serif;
+}
+
+.input_but {
+	border: 1px solid #999;
+	width: 45px;
+	height:19px;
+
+	font-size:11px;
+}
+
+
+/* ------------------------------------- */
+/* --------------- HEADER -------------- */
+/* ------------------------------------- */
+
+/* -------------Logo ------------ */
+#logo img {
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+/* ------------- Menu ------------ */
+#header_b1 {
+	width: 725px;
+	float: left;
+	/* border: 1px dashed #666; */
+}
+
+ul#nav {
+	margin: 30px 10px 0px -5px; 
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+	ul#nav li {
+		float: left;
+		display: block;
+		/*
+		border-right: 1px solid #533191;
+		min-height: 5px;
+		padding-top: 5px;*/
+	}
+	
+	ul#nav li.last {
+		border: none
+	}
+	ul#nav li a {
+		display: block;
+		padding: 0px 10px;
+		color:#542785;
+	}
+	ul#nav li.nav_current a {
+		color:#AF006E;
+	}
+	ul#nav li a:hover {
+		text-decoration: none
+	}
+
+	ul#nav li.line {
+		color: #542785;
+	}
+
+/* -----------Search---------------- */
+#searchbar {
+	width: 175px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+
+#searchbar p {
+	color: #7C6A55;
+	font-size: 10px;
+}
+
+#searchbar a {
+		color:#7C6A55;
+}
+
+#searchbar a.active, #searchbar a.visited, #searchbar a:hover {
+		text-decoration: none
+}
+
+.search { 
+	background-image: url(../images/search_but01.jpg);
+	background-repeat: no-repeat;
+
+	width: 145px;
+	height: 27px;
+}
+
+.search_input {
+	margin: 5px 0px 5px 0px;
+	margin-left: 10px;
+	background-color: #f6f8f7;
+	border:1px solid #f6f8f7;
+	width:130px;
+	height:13px;
+	color:#816B57;
+	font-size: 11px;
+}
+
+.search_go {	
+	cursor:pointer;
+	border:outset 0px #ccc;
+	background:#999;
+	width:17px;
+	height:27px;
+	padding: 1px 2px;
+	background:url(../images/search_but02.jpg) repeat-x left top;
+}
+
+
+/* ------------------------------------- */
+/* ------------ MAIN CONTENT ----------- */
+/* ------------------------------------- */
+
+/* ------------- Slider ------------ */
+/* ------------- Slider ------------ */
+		#slider{
+			width: 725px; 
+			height: 370px;
+			padding: 0;
+			font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+			color: #444;
+			/*border: 1px solid #666;*/
+		}
+			
+		ul.tabs {
+			margin: 0;
+			padding: 0;
+			float: left;
+			list-style: none;
+			height: 27px;
+			/*border-bottom: 1px solid #FFF;*/
+			border-left: 1px solid #fff;
+			width: 100%;
+		
+		}
+		ul.tabs li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			height: 26px;
+			line-height: 25px;
+			/*border: 1px solid #fff;*/
+			border-left: none;
+			margin-bottom: -1px;
+			background: #cedd2a;
+			overflow: hidden;
+			position: relative;
+		}
+		ul.tabs li a {
+			text-decoration: none;
+			font-weight: bold;
+			display: block;
+			font-size: 1.2em;
+			padding: 0 20px;
+			/*border: 1px solid #fff;*/
+			outline: none;
+		}
+
+		html ul.tabs li.active, html ul.tabs li.visited {
+			color: #b2006f;
+			background-color: #f3eb3e;
+			/*border-bottom: 1px solid #fff;*/
+		}
+		
+		.tab_container {
+			border: 1px solid #fff;
+			border-top: none;
+			clear: both;
+			float: left; 
+			width: 100%;
+			background: #fff;
+			/*border: 1px solid #666;*/
+		}
+		
+		.tab_content {
+			font-size: 1.2em;
+			padding: 20px 20px 0px 20px;
+		}
+		.tab_content h2 {
+			font-weight: normal;
+			padding-bottom: 10px;
+			border-bottom: 1px dashed #ddd;
+			font-size: 1.8em;
+		}
+		.tab_content h3 a{
+			color: #254588;
+		}
+		.tab_content img {
+			float: left;
+			margin: 0 20px 20px 0;
+			border: 1px solid #ddd;
+			padding: 5px;
+		}
+		
+		#maincontent {
+			width: 725px;
+			margin: 10px 0px 0px 0px;
+			float: right;
+			
+		}
+		
+		ul#menu_tab {
+				font-size: 0.9em
+			}
+			ulul#menu_tab a {
+				text-decoration: none
+			}
+			ulul#menu_tab a:hover{
+				color: #4F2683
+			}
+		
+		h6.tab_title {
+			padding-bottom: 10px;
+		}
+
+
+		a.clicked {color: #b2006f;}
+		.t {color:#b2006f;}
+
+/* ------------- Block - Sliding DIV ------------ */
+
+#block1{
+	width: 745px;
+	height: 335px;
+	/*border: 1px solid #CCC;*/
+}
+
+.block_thumb{
+	float:left;
+	display: block;
+	width: 245px;
+	margin: 0px 5px 0px 0px;
+	/*border: 1px dashed #f0eded;*/
+}
+
+h6.thumb {
+	font-weight: bold;
+	color: #542785;
+}
+
+img.arrow_but{
+	margin-left: 3px;
+	padding-top: 5px;
+	border: 1px solid #000;
+}
+.slidingDiv {
+	height:100px;
+	background-color: #FFF;
+	padding: 8px 20px 20px 20px;
+	margin-top:10px;
+
+}
+
+.show_hide {
+	display:none;
+}
+
+.thumb_img {
+    float: left;
+    margin: 0px 10px 10px 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+	
+}
+
+.thumb_img_chairman {
+    float: left;
+    margin: 0px 10px 0px 0;
+    padding: 2px 2px 0px 2px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+	
+}
+
+.thumb_img2 {
+    float: left;
+    margin: 2px 10px 0px -20px;
+     padding: 2px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+.description {
+	overflow: hidden;
+	width: 90px;
+	/*border: 1px dashed #ccc;*/
+
+}
+
+.message {
+
+	margin-top:26px; 
+	height:18px;
+	width:150px;
+	padding: 5px;
+	background: #d6df4e;
+	
+}
+
+.message a {
+	color: #AF006E;
+	border:none;
+
+}
+
+.message:active, .message:visited {
+	color: #AF006E;
+	border:none;
+		
+}
+
+
+/* ------------- Carousel ------------ */
+
+.carousel-component { 
+	position:relative;
+	overflow:hidden;   /* causes the clipping */
+	display:none; /* component turns it on when first item is rendered */
+
+
+}
+				
+.carousel-component ul.carousel-list { 
+	width:10000000px;
+	position:relative;
+	z-index:1; 
+}
+
+.carousel-component .carousel-list li { 
+	float:left;
+	list-style:none;
+	overflow:hidden;
+	
+    
+}
+
+/**
+ * VERTICAL CAROUSEL DEFAULTS
+ **/
+.carousel-component .carousel-vertical li { 
+	margin-bottom:0px;
+
+	/* Fix for extra spacing in IE */
+	float:left;
+    clear:left;  
+	
+	/* Force the LI to respect the HEIGHT specified */
+	overflow:hidden;
+	display:block;
+}
+
+/* For vertical carousel, not set, width defaults to auto */
+/* Note if you explicitly set width to auto, this might cause */
+/* problems with Safari... as in up/down button not working in some examples. */	 
+.carousel-component ul.carousel-vertical {
+/*	width:auto;*/
+}
+
+.carousel-component .carousel-clip-region { 
+	overflow:hidden; /* Secret to the clipping */
+	margin:0px auto;
+	position:relative; 
+}
+
+/**
+ * ==============================================================================
+ * Safe to override. It is safe to override background, padding, margin, color,
+ * text alignment, fonts, etc. Define a separate CSS file and override your style
+ * preferences.
+ **/
+
+.carousel-component { 
+	background:#fff;
+	padding:0px;
+}
+.carousel-component ul.carousel-list { 
+	margin:0px;
+	padding:0px;
+	line-height:0px;
+}
+.carousel-component .carousel-list li { 
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	font:10px verdana,arial,sans-serif;
+	color:#666;
+}
+.carousel-component .carousel-vertical li { 
+}
+.carousel-component ul.carousel-vertical { 
+}
+
+
+/*
+	Inlined styles for my overrides to the carousel for this demo.
+	Normally I would put this in a separate CSS file.
+*/
+
+.carousel-component { 
+	padding:0px;
+	margin-left:-30px;
+	/*border: 1px solid #000;*/
+
+}
+
+.carousel-component .carousel-list li { 
+	margin: 0px 5px 0px 8px;
+	width:163px; /* img width is 75 px from flickr + a.border-left (1) + a.border-right(1) + 
+	               img.border-left (1) + img.border-right (1)*/
+	height:108px; /* image + row of text (87) + border-top (1) + border-bottom(1) + margin-bottom(4) */
+	/*	margin-left: auto;*/ /* for testing IE auto issue */
+
+}
+
+.carousel-component .carousel-list li a img
+,.carousel-component .carousel-list li a:active img
+,.carousel-component .carousel-list li a:link img
+,.carousel-component .carousel-list li a:visited  img{ 
+	display:block;
+	opacity:.7;
+	filter:alpha(opacity=70);
+	/*filter: "alpha(opacity=50)";*/
+	outline:none;
+}
+
+
+
+
+
+
+.carousel-component .carousel-list li a:hover img {  
+	opacity:1;
+	filter:alpha(opacity=100);
+	/*filter: "alpha(opacity=100)";*/
+}
+
+.carousel-component .carousel-list li img { 
+	display:block; 
+}
+								
+.carousel-component .carousel-prev { 
+	position:absolute;
+	bottom:-2px;
+	z-index:3;
+	cursor:pointer; 
+	left:5px; 
+}
+
+.carousel-component .carousel-next { 
+	position:absolute;
+	bottom:0px;
+	z-index:3;
+	cursor:pointer; 
+	right:5px; 
+}
+
+
+
+
+/* ------------------------------------- */
+/* ------------ RIGHT SIDEBAR ---------- */
+/* ------------------------------------- */
+
+.rsidebar_menu {
+	margin: 25px 0px 20px 0px;
+	font-weight:bold;
+
+}
+
+.rsidebar_blocks {
+	margin: 10px auto;
+	font-weight:bold;
+}
+
+.rsidebar_blocks p{
+	width: 150px;
+	line-height: 15px;
+	padding: 0px 5px 10px 5px;
+	text-align:justify;	
+}
+
+
+/*--------------- Right Side Menu----------*/
+.ddsmoothmenu-v ul{
+margin: 0;
+padding: 0;
+width: 153px; /* Main Menu Item widths */
+list-style-type: none;
+font: 11px Tahoma,Arial,Helvetica,sans-serif;
+}
+ 
+.ddsmoothmenu-v ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.ddsmoothmenu-v ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: #533090;
+text-decoration: none;
+padding: 5px;
+border-bottom: 1px solid #4F2683;
+}
+
+.ddsmoothmenu-v ul li a:link, .ddsmoothmenu-v ul li a:visited, .ddsmoothmenu-v ul li a:active{
+background: #fff; /*background of menu items (default state)*/
+color: #4F2683;
+}
+
+.ddsmoothmenu-v ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+background: #fff; 
+color: #4F2683;
+}
+
+.ddsmoothmenu-v ul li a:hover{
+background: #f0f2f1; /*background of menu items during onmouseover (hover state)*/
+color: #AF006E;
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+margin-left: 5px;
+top: 0;
+font-weight: normal;
+visibility: hidden;
+}
+ 
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }
+
+/*--------------------------------*/
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow{ /*shadow for NON CSS3 capable browsers*/
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background: white;
+}
+/*--------------------------------*/
+
+
+
+
+/* ------------------------------------- */
+/* ------------ LEFT SIDEBAR ---------- */
+/* ------------------------------------- */
+
+
+
+
+		
+.left_menu	{ 
+	text-align:left;
+	list-style: none;
+	padding-left:0px; 
+	margin-left:0px;
+
+}
+.left_menu li{ 
+	line-height:25px; 
+
+}
+.left_menu a { 
+	color:#7C6A55; 
+	padding-left: 10px;
+	text-decoration:none; 
+}
+
+
+.lsidebar_active {
+	background-image: url(../images/leftbut.gif);
+	background-repeat: no-repeat;
+	color:#7C6A55; 
+	font-weight: bold;
+}
+
+.lsidebar_active a {
+	color: #7C6A55;
+}	
+
+.lsidebar_active2 {
+	background-image: url(../images/leftbut2.gif);
+	background-repeat: no-repeat;
+	color:#7C6A55; 
+}	
+
+.lsidebar_active3 {
+	background-image: url(../images/leftbut2a.gif);
+	background-repeat: no-repeat;
+	color:#7C6A55; 
+}	
+
+/* ------------------------------------- */
+/* --------------- FOOTER -------------- */
+/* ------------------------------------- */
+
+#footer p {
+	color: #7C6A55;
+	margin: 0; padding: 0;
+}
+
+#footer p.copyright {
+	text-align: left;
+	line-height: 15px;
+	border-top: 2px solid #7C6A55;
+	padding-top: 5px;
+	width: 550px;
+}
+
+#footer a {
+		color:#393531;
+}
+#footer a.visited {
+		color:#542785;
+		text-decoration: none;
+		
+}
+
+	
+
+	

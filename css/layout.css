@@ -1,0 +1,83 @@
+/* main CSS Document */
+/* general styling first */
+/* reset css styles individually instead of universal selector. */
+/*html, body{
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	border-left:0;
+} */
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	background: white;
+	font-family:tahoma,arial,sans-serif;font-size:11px;
+	color: #7C6A55;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+/* end reset styles */
+
+
+.clearfix {display:inline-block;}
+/* mac hide \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+ /* End hide */
+/*........... do not change or amalgamate the above clearfix styles ......*/
+
+p,h1,h2,h3,h4,h5,h6,ul,ol {margin-bottom:0}
+a img,img{border:none}
+a {
+	color: #4F2683;
+	text-decoration: none;
+}
+a:visited, a:hover {
+	text-decoration: none;
+}	
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:bold;
+}
+h1{font-size:19px}/* 21px */
+h2{font-size:19px}/* 19px */
+h3{font-size:11px}/* 17px */
+h4{font-size:15px}/* 15px */
+h5{font-size:13px}/* 13px */
+h6{font-size:11px}/* 11px */
+
+p {font-size:11px}
+
+body{
+	font-size: 11px; 
+	/*text-align:center;*//* for ie5.+*/
+}
+
+
+

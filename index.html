@@ -1,0 +1,533 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>EastWest Bank Intranet :: Your gateway to EastWest Bank Community</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+	<link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="css/general.css" rel="stylesheet" type="text/css" />
+    <link href="css/sbox.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery-1.6.3.min.js"></script>
+    
+	<!-- Tabs/Slider-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//Default Action
+			$(".tab_content").hide(); //Hide all content
+			$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+			
+			//On Click Event
+			$("ul.tabs li").click(function() {
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active content
+				return false;
+			});
+
+		});
+	</script>
+    
+    <!-- Search-->
+    <script language="javascript" type="text/javascript">
+	function dSearch(){
+		var frm = document.frmSearch;
+		frm.action = "/site/directory.asp?searchmode=strName&keyword="+frm.mantxt.value;
+		frm.submit();
+		}
+	</script>
+
+	<!--Carousel -->
+	<script type="text/javascript" src="scripts/combo.js"></script> 
+	<script type="text/javascript" src="scripts/carousel.js"></script>
+	<script src="scripts/function.inc.js" language="javascript" ></script>
+
+
+
+</head>
+
+<body>
+
+<div id="header">
+		<div id="header_b1">   
+                <div class="examples"> 
+                    <a href="index.asp" class="sel" id="logo"><img src="images/ew-intralogo.gif" width="245" height="61" alt="East West Bank Logo" /></a>			
+                </div> 
+                <ul id="nav">
+                  <li class="nav_current"><a href="/site/index.asp" class="sel">HOME</a></li>
+                  	<li class="line">|</li>
+                    <li><a href="about_your_bank/" >ABOUT YOUR BANK</a></li>
+
+                    <li class="line">|</li>
+                    <li><a href="hrg/" >HRG</a></li>
+                    <li class="line">|</li>
+                    <li><a href="erc/erc_main.asp" >ERC</a></li>
+                    <li class="line">|</li>
+                    <li><a href="directory.asp" >DIRECTORY</a></li>
+
+                    <li class="line">|</li>
+                    <li><a href="application.asp" >APPLICATIONS</a></li>
+                    <li class="line">|</li>
+                    <li><a href="iad/ethicsdirect.asp" >ETHICS DIRECT</a></li>
+                    <li class="line">|</li>
+                    <li><a href="http://directweb/info/ew_career.asp" target="_blank" >CAREERS</a></li>                
+              </ul> 
+          </div> 
+		  
+		<div id="searchbar">
+
+       		<form name="frmSearch" method="post">
+            <p style="margin-left:11px"><a href="/site/sitemap.asp">SITE MAP</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/site/contactus.asp">CONTACT US</a></p>
+       	  	<div class="search" style="float:left"><input name="mantxt" type="text" class="search_input" value="-search-"/></div>
+            <div style="float:left">
+            	<input name="Action2" type="submit" id="sbutton" onclick="dSearch();" value="" class="search_go"/>
+            </div>
+			</form>           
+		</div>
+
+        			
+
+        <div style="clear:both;">&nbsp;</div> 
+</div> <!-- End of Header -->
+
+
+<div id="wrapper">
+
+	<div id="container">
+    		<div style="width:690px;" id="left-column">
+				<div id="slider">
+               		<ul class="tabs" id="menu_tab">
+                      <li class=""><a id="change" class="t" href="#tab1">ANNOUNCEMENTS</a></li>
+                      <li class=""><a id="change" href="#tab2">4 new branches open today. We now have 115 branches.</a></li>
+                    </ul>
+                    
+                    <script type="text/javascript">
+						window.onload = SetAction();
+						function SetAction() {
+						var allLinks = document.getElementsByTagName("A");
+						
+							for (var i=0;i<allLinks.length;i++)
+							{
+									if (allLinks[i].parentNode.nodeName == "LI") 
+									{
+									
+										allLinks[i].onclick = function ()
+										{
+											for (var j=0;j<allLinks.length;j++) 
+											{
+												if (this.id=="change"){
+												
+													if (allLinks[j].className != "") {
+														allLinks[j].className ="";
+													}
+												
+													this.className = "clicked";
+												}
+											}
+										}
+										//}
+									}
+							}
+						}
+									
+						 
+						</script>
+    
+                    <div class="tab_container">
+                        <div id="tab1" class="tab_content" style="background-color:#FFF; height: 270px; border:1px solid #e5e1e1; margin-top:-1px">
+                        	<h6 class="tab_title">WHAT'S NEW?  Check out the latest news, events, announcement, product offerings and promo programs.</h6> 
+                           	
+							<a href="http:/site/newbr/?intSeq=30" target="_blank">
+								<div style="margin: auto; width: 695px">
+
+									
+											<div style="float: left">
+											<img style="width:415px;height:200px; border:none" src="images/banner.jpg"/>
+											</div>
+									
+											<div style="float:right">
+											<img style="width:217px;height:200px; border:none" src="images/ribbon.jpg"/>
+											</div>
+											
+								</div>
+							</a>
+
+                        </div>
+                        
+                        
+                        <div style="display: none; background-color:#f6f6f2; height:290px; margin-bottom: 30px; margin-top:-1px" id="tab2" class="tab_content">
+                                        <p>Jezebel had whiskey snakeoil, askin' weren't, skanky aunt
+                             townfolk fetched. Fit tractor, them broke askin', them havin' rattler 
+                            fell heffer, been tax-collectors buffalo. Quarrel confounded fence wagon
+                             trailer, moonshine wuz, city-slickers fixin' cow. </p>
+                         
+                         
+                        </div>
+                        
+                        
+                        
+                   </div> 
+                       	
+                </div> <!-- End of Slider Tab -->
+                
+                <div id="block1">
+                  <div class="block_thumb">
+
+                  
+                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                       	  <h6 class="thumb">News Updates&nbsp;<a id="myHeader1-2" href="javascript:showonlyonev2('newboxes1-2');">
+							<img class="thumb_but" src="images/bthumb_but.gif" width="19" height="17" alt="arrow_button" /></a></h6>      
+                            <br />
+                           <ul style="list-style:none; padding:0; margin:0px">
+                                    <li>
+                                        <div>
+
+                                            <div style="float:left;"><img src="images/jtg_chairman.jpg" class="thumb_img_chairman"/></div>
+                                            <div class="description" style="width: 150px;">
+                                              <p style="text-align: left">"We attained another milestone with the recent opening of our 100th branch. Two days ago, we just grew to 102 branches."</p>
+                                          </div>
+                                        </div>
+                                  </li>
+                               
+                                    <li>
+                                        <div class="message"><strong style="color: #b2006f;font-weight: bold;font-size: 12px"><a href="#" onClick="smOpen('acm_article.asp?msg=7','left-column');" class="message">Chairman Message</a></strong></div>
+
+                                    </li>
+                           </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><div name="newboxes-2" id="newboxes1-2" style="display: block" class="slidingDiv">
+                                                <img src="images/acm_ceo.jpg" class="thumb_img2" />
+                                                <div class="description">
+                                                    <p><a  href="#" onClick="smOpen('acm_article.asp?msg=9','left-column');">EastWest posts 356% net rise</a></p>
+
+                                                </div>
+                                            </div> </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="block_thumb" style="width:250px">
+                  		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+
+								<td>
+									<h6 class="thumb">Upcoming Events&nbsp;
+										<a id="myHeader2-2" href="javascript:showonlyonev2('newboxes2-2');">
+										<img class="thumb_but" src="images/bthumb_but.gif" width="19" height="17" alt="arrow_button" /></a>
+									</h6>  
+									<br />
+									<img src="images/bt.jpg" class="thumb_img" />
+									<div class="description" style="width: 120px">
+										<p>Apply for an EastWest Bank Credit Card with Balance Transfer at 0.99% now and own an Apple gadget! 
+										<a href="http://directweb/info/promo_iTransfer.asp" onClick="smOpen('acm_article.asp?msg=10','left-column');"><br />
+
+										Click here for <br />more details </a></p>
+									</div>	
+								</td>
+							</tr>
+							<tr>
+								<td><div name="newboxes-2" id="newboxes2-2" style="display: none" class="slidingDiv">
+                      		<img src="images/homeloanthumb.png" class="thumb_img2" />
+                      		<div class="description">
+                       			<p>Great news! Owning a dream home is now EASY on the pocket!<br />
+										      <a href="http://www.eastwestbanker.com/info/hslmain.asp">Click here <br />
+											  for Details....</a></p>
+               				</div>
+                    	</div></td>
+
+							</tr>
+                        </table>
+				  </div>
+                  <div class="block_thumb" style="width: 220px;">
+                  		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td><h6 class="thumb">Upcoming Events&nbsp;
+									<a id="myHeader3-2" href="javascript:showonlyonev2('newboxes3-2');">
+
+									<img class="thumb_but" src="images/bthumb_but.gif" width="19" height="17" alt="arrow_button" /></a></h6>  
+									<br />
+									<img src="images/tn_annual2010.jpg" class="thumb_img" />
+									<div class="description">
+										<p><a href="../site/EastWestBank_AnnualReport2010.pdf">Click here to view our 2010 Annual Report</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+
+								<td>
+									<div name="newboxes-2" id="newboxes3-2" style="display: none" class="slidingDiv">
+										<img src="images/manifesto.jpg" class="thumb_img2" />
+										<div class="description">
+											<p><a  href="/site/manifesto.asp">Click here to read "Our Manifesto"</a></p>
+										</div>
+									</div>
+								</td>
+
+							</tr>
+                        </table>
+                  </div>
+                      
+				</div> <!-- end of Sliding Menu -->
+                    
+              
+              <!-- Carousel Structure -->
+				<div id="block2" style="margin-top:5px;">
+					<div id="mycarousel" class="carousel-component">
+						<!--<div class="carousel-prev">
+							<img id="prev-arrow" src="images/left-enabled.gif" alt="Previous Button">
+						</div>	-->			
+						<div class="carousel-next">
+
+							<img id="next-arrow" src="images/right-enabled.gif" alt="Next Button">
+						</div>
+						<div style="margin-left:28px; margin-bottom:-2px">
+							<img src="images/other_news.gif" width="120" height="24" alt="other news" />
+						</div>
+						
+						<div class="carousel-clip-region">
+							
+							<ul style="position: relative; left: -783px; top: 0px;" class="carousel-list carousel-horizontal">
+								
+									 <li id="mycarousel-item-1"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn1.jpg" alt="item 1" height="108" width="163"></a></li>
+
+									
+									 <li id="mycarousel-item-2"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn2.jpg" alt="item 2" height="108" width="163"></a></li>
+									
+									 <li id="mycarousel-item-3"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn3.jpg" alt="item 3" height="108" width="163"></a></li>
+									
+									 <li id="mycarousel-item-4"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn4.jpg" alt="item 4" height="108" width="163"></a></li>
+									
+									 <li id="mycarousel-item-5"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn5.jpg" alt="item 5" height="108" width="163"></a></li>
+									
+									 <li id="mycarousel-item-6"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn6.jpg" alt="item 6" height="108" width="163"></a></li>
+
+									
+									 <li id="mycarousel-item-7"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn7.jpg" alt="item 7" height="108" width="163"></a></li>
+									
+									 <li id="mycarousel-item-8"> <a href="http://192.1.201.111/e-channel/latest.asp" target="_blank"> 
+									 <img src="images/thumbs/issue5/issue5_tn8.jpg" alt="item 8" height="108" width="163"></a></li>
+									
+							</ul>
+						</div>		
+					</div> <!-- End of Carousel --> 
+				</div><!--end block2-->						
+							
+
+      </div> <!-- left column -->
+
+      
+	</div> <!-- End of Container -->
+	   
+       
+  	<div id="rightsidebar">
+    	
+<!--Right Sidebar Menu -->
+
+	<script type="text/javascript" src="scripts/ddsmoothmenu.js"> </script>
+	<script type="text/javascript">
+		// Smoothness
+		ddsmoothmenu.init({
+			mainmenuid: "smoothmenu2", //Menu DIV id
+			orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+			classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+			//customtheme: ["#804000", "#482400"],
+			contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+		})
+
+		
+		// Buttons 
+		
+		function showonlyonev2(thechosenone) {
+		  var newboxes = document.getElementsByTagName("div");
+		  for(var x=0; x<newboxes.length; x++) {
+				name = newboxes[x].getAttribute("name");
+				if (name == 'newboxes-2') {
+					  if (newboxes[x].id == thechosenone) {
+							if (newboxes[x].style.display == 'block') {
+								  newboxes[x].style.display = 'none';
+							}
+							else {
+								  newboxes[x].style.display = 'block';
+							}
+					  }else {
+							newboxes[x].style.display = 'none';
+					  }
+				}
+		  }
+		}
+	</script>
+
+
+<div class="rsidebar_menu" >
+
+				
+                	<img src="images/download_but.jpg" width="153" height="24" alt="downloads"/>
+                
+                    <div id="smoothmenu2" class="ddsmoothmenu-v">
+                        <ul>
+                        
+  
+        
+                            <li><a href="#">Policies</a>
+                                <ul>
+                                  <li><a href="/site/hrg/default.asp?qString=p_pol&rtPage=p_dept">Personnel</a></li>
+
+                                  <li><a href="/site/hrg/default.asp?qString=p_total&rtPage=p_dept">Compensation &amp; Benefits</a></li>
+                                  <li><a href="/site/hrg/default.asp?qString=p_code&rtPage=p_dept">Code of Ethics</a></li>
+                                  <li><a href="/site/manifesto.asp">Our Manifesto</a></li>
+                                  <li><a href="/site/manuals/communications.asp">Communications</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Manuals</a>
+                                 <ul>  
+                                  <li><a href="/site/manuals/compliance.asp">Compliance</a></li>
+                                  <li><a href="/site/manuals/operations.asp">Operations</a></li>
+                                  <li><a href="/site/manuals/riskmanagement.asp">Risk Management Policy</a></li>
+                                  <li><a href="/site/manuals/business_continuity.asp" >Business Continuity Management</a></li>
+                                  <li><a href="/site/manuals/chom.asp">CHOM &amp; Other Clearing Matters</a></li>
+
+                                  <li><a href="/site/manuals/tutorial.asp">IT Tutorials</a></li>
+                                 </ul>
+                            </li>
+                            <li><a href="#">Legal</a>
+                                  <ul>
+                                  <li><a href="/site/manuals/legalfaqs.asp">FAQs</a></li>
+                                  </ul>
+
+                            </li>
+                            <li><a href="#">Forms</a>
+                                  <ul>
+                                  <li><a href="/site/hrg/hr_forms.asp?qString=p_forms&rtPage=p_dept">HR</a></li>
+                                  <li><a href="/site/litigation/">Litigation</a></li>
+                                  <li><a href="/site/hrg/training_forms.asp?qString=tdd_forms&rtPage=t_dept">Training</a></li>
+                                  <li><a href="/site/finance/">Finance</a></li>
+
+                                  </ul>
+                            </li>
+                            <li><a href="#">Bank Financials</a>
+                                  <ul>
+                                  <li><a href="#" onclick="window.open('/site/bankfin/310-013-2010 Annual Report 2008.pdf');">Annual Report 2008</a></li>
+
+                                  <li><a href="#" onclick="window.open('/site/bankfin/310-013-2010 EWAFS Revised.pdf');">1st Quarter 2010 SOA</a></li>
+                                  <li><a href="#" onclick="window.open('/site/bankfin/310-013-2010 PDI SOC as of Dec  31.pdf');">4th Quarter 2009 SOA</a></li>
+
+                                  </ul>
+                            </li>
+                            <li><a href="http://directweb/tool/branch_list.asp" target="_blank">Branch Directory</a></li>
+                            <li><a href="#">Acquired Asset</a>
+                                  <ul>
+                                  <li><a href="http://192.1.201.59/tool/prop4sale_auto.asp" target="_blank">Repossessed Cars</a></li>
+                                  <li><a href="http://192.1.201.59/tool/prop4sale_main.asp" target="_blank">Foreclosed Properties</a></li>
+
+                                  </ul>
+                            </li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="/site/manuals/tutorial.asp">IT Tutorials</a></li>
+                        </ul>
+					</div>
+                
+                </div> <!-- End of Sidebar - Right Sidebar - Menu -->   
+
+
+
+
+<div style="display:none;">
+<div id="dialog-playaudio" title="Interview with EWB President" style="text-align:center">
+
+<!--
+	<object id="MediaPlayer" classid="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95" standby="Loading Windows Media Player components..." type="application/x-oleobject" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112" height="46"> <param name="filename" value="Business Agenda 101211 Interview East West Bank President.wma"><param name="Showcontrols" value="True"><param name="autoStart" value="False"><embed type="application/x-mplayer2" src="Business Agenda 101211 Interview East West Bank President.wma" name="MediaPlayer"></object>-->
+<!-- 
+	<object type="application/x-shockwave-flash" data="player_mp3.swf" width="265" height="40">
+        <param name="movie" value="player_mp3.swf" />
+        <param name="FlashVars" value="mp3=Business Agenda 101211 Interview East West Bank President.mp3&amp;showstop=1&amp;bgcolor1=f74aab&amp;bgcolor2=920056&amp;loadingcolor=d5e358&amp;buttonovercolor=e4f35d&amp;slidercolor2=b4b4b4&amp;sliderovercolor=d5e358" />
+    </object>
+   <embed src="Business Agenda 101211 Interview East West Bank President.mp3" width=25 height=25 autostart=false repeat=true loop=true></embed>-->
+<br />
+<br />
+    <audio id="AudioTag" controls="controls">
+      <!--<source src="horse.ogg" type="audio/ogg" />-->
+      <source src="/site/Business Agenda 101211 Interview East West Bank President.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+</div>
+</div>
+
+
+				
+
+                <div class="rsidebar_blocks">
+                  
+                  <img src="images/play_but.jpg" width="153" height="24" alt="Interview with EWB President" style="cursor:pointer;" border="0" 
+				  onclick="openDialog();" />
+                    <p><a href="#" onclick="openDialog();" title="Business Agenda 10/12/11 Interview East West Bank President">Business Agenda 10/12/11 Interview East West Bank President </a></p>
+          
+				  
+				<!-- sug box-->
+				   <a href="/site/suggestionbx/sbox.asp" >
+				   <img src="images/sbox_but.jpg" width="153" height="24" alt="Suggestion Box" /> </a>
+
+                    <p>For Suggestion and Comment, <a href="/site/suggestionbx/sbox.asp" title="Suggestion Box">click here!</a></p>
+                <!-- acm blog -->
+					<div><img src="images/acm_banner.jpg" width="153" height="103" alt="From East to West by ACM" style="cursor:pointer;" border="0" onclick="location='/site/acmBlog.asp'" /></div>
+                    <br />
+                    
+				<!-- e-channel-->
+
+					<a href="http://192.1.201.111/e-channel/latest.asp" target="_blank" align="left"><img src="images/echannel_but.jpg" width="153" height="24" alt="e-Channel" /></a>
+                    <p>Volume 2010 Issue 9 is now available for viewing. To read more, click the image below. <a href="http://192.1.201.111/e-channel/latest.asp">view more</a></p>
+                  	
+                <!-- The Informer-->
+                  <a href="/site/informer/" target="_blank"><img src="images/informer_but.jpg" width="153" height="24" alt="The Informer" /></a>
+                    <p>Visit this section for developments in the economy and banking & financial markets. <a href="/site/informer/">view more</a></p>
+					
+                <!-- NewsFlash Announcements-->
+
+                    <a href="/site/news/" target="_blank"><img src="images/newsflash_but.jpg" width="153" height="24" alt="News Flash" /></a>
+                    <p>Check out our latest NewsFlash announcements. <a href="/site/news/">view more</a></p>
+					
+                <!-- MediaBanc-->
+                    <a href="http://www.mediabanc.ws/index.html" target="_blank"><img src="images/mediabanc_but.jpg" width="153" height="24" alt="mediabanc" /></a>
+                    <p>Find out the lates news on the EastWest Bank from MediaBanc, one of Asia's largest news electronic library.</p>
+
+
+                </div> <!-- End of Sidebar - Right Sidebar - Blocks -->  
+ 
+ 
+ </div>            
+	</div> <!-- End of Right Sidebar -->     
+	<div class="clear"></div>    
+
+</div> <!-- End of Wrapper -->
+
+<div id="footer" style="margin-top:0; padding-top:0">
+	
+		
+		<p class="copyright">Copyright &copy; 2000 - 2011 <a href="http://www.eastwestbanker.com" target="_blank">East West Banking Corporation</a>. A subsidiary of the Filinvest Group. <br />
+        All Rights Reserved.   <a href="http://validator.w3.org/check/referer">XHTML</a> &bull; <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
+
+	
+
+
+
+            
+</div> <!-- End of Footer -->
+
+    
+</body>
+</html>
